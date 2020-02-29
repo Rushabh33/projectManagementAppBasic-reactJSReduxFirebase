@@ -1,13 +1,21 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
+
+import styled from "styled-components";
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./components/layout/Navbar";
+
+const MainApp = styled.div``;
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+      <MainApp>
+        <Navbar />
+      </MainApp>
+    </BrowserRouter>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
-
+export default App;
